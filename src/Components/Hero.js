@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../images/pensilLogo.svg'
 import image2 from '../images/section2.jpeg'
 import image3 from '../images/section3.jpeg'
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
           <a href="/" className='text-[#222] font-semibold mr-6'>Use case <i className="fa-solid fa-angle-down text-[#999] "></i> </a>
           <a href="/" className='text-[#222] font-semibold mr-6'>Resource <i className="fa-solid fa-angle-down text-[#999] "></i> </a>
           <a href="/" className='text-[#222] font-semibold mr-6'>Price </a>
-          <a href="/" className='text-blue1 bg-light px-5 py-4 rounded-lg font-semibold mr-2'> Login </a>
+          <Link to="/login" className='text-blue1 bg-light px-5 py-4 rounded-lg font-semibold mr-2'> Login </Link>
           <a href="/" className='text-white bg-blue1 hover:bg-blue2 px-5 py-4 rounded-lg font-semibold'> Try for Free </a>
         </div>
         <i className="fa-solid fa-bars block lg:hidden text-2xl"></i>
@@ -169,7 +170,7 @@ const Hero = () => {
 
 
       <footer className="text-black body-font font-nunito">
-        <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div className="max-w-[75rem] px-5 py-12 border-t mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a href='/' className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               <img src={logo} alt="main Logo" />
